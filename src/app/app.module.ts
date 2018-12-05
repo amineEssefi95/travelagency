@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 
 
 
@@ -20,6 +21,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     OffresListComponent,
     CarouselComponent,
+    FilterBarComponent,
   ],
   imports: [
     BrowserModule,

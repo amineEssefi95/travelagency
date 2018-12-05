@@ -16,23 +16,5 @@ export class OffresService {
   getAllOffres(): Observable<IOffers[]> {
    return  this._http.get<IOffers[]>(this.URL);
   }
-  // getAllComptes(): ICompte[] {
-  //   return [
-  //     {
-  //         'numero': 'Fake C200',
-  //         'proprietaire': 'Dave Seyer & Phil Webb, Boot Creators',
-  //         'solde': 10
-  //     },
-  //     {
-  //         'numero': 'Fake C3000',
-  //         'proprietaire': 'Rod Johnson',
-  //         'solde': 3000
-  //     },
-  //     {
-  //         'numero': 'Fake  C4000',
-  //         'proprietaire': 'Martin Fowler',
-  //         'solde': 4000
-  //     }
-  //   ];
-  // }
+
 }
