@@ -7,4 +7,5 @@ export interface IOffers {
   prixNuite: number;
   region: string;
   ville: string;
+  reservations?: any[];
 }

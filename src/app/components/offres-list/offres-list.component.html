@@ -10,7 +10,7 @@
       <rating [(ngModel)]="item.nombreEtoile" [max]="5" [readonly]="isReadonly" style="color:gold; font-size: 25px; "></rating>
       <h5 class="card-title">{{ item.nomHotel +" " + item.region }}</h5>
       <p class="card-text">{{ item.nomHotel }}</p>
-      <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Plus..</a>
+      <a class="btn btn-secondary btn-lg" [routerLink]="['../hotelinfo', item.idOffre]" routerLinkActive="router-link-active"  >Plus..</a>
       <p class="card-text">
         <small class="text-muted">{{ item.prixNuite }}</small>
       </p>
