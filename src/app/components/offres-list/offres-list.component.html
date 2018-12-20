@@ -4,7 +4,7 @@
 <div class="card-deck">
   <div class="card col-md-4" *ngFor="let item of data" >
   <div class="image">
-    <img class="card-img-top" src="{{item.image}}" alt="{{item.image}}" />
+    <img class="card-img-top" src="../../../assets/images/{{item.image[0].path}}" alt="{{item.image[0].path}}" />
   </div>
     <div class="card-body">
       <rating [(ngModel)]="item.nombreEtoile" [max]="5" [readonly]="isReadonly" style="color:gold; font-size: 25px; "></rating>

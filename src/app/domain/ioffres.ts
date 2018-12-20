@@ -1,6 +1,8 @@
+import { IImages } from './iimages';
+
 export interface IOffers {
   idOffre: number;
-  image: string;
+  image: IImages[];
   adress: string;
   nomHotel: string;
   nombreEtoile: number;

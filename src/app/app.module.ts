@@ -15,6 +15,8 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
 import { HotelInfoComponent } from './hotel-info/hotel-info.component';
 import { AppRoutingModule } from './app.routing';
 import { HomeComponent } from './home/home.component';
+import { AjouterOffreComponent } from './admin/ajouter-offre/ajouter-offre.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { HomeComponent } from './home/home.component';
     FilterBarComponent,
     HotelInfoComponent,
     HomeComponent,
+    AjouterOffreComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

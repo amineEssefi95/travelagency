@@ -10,7 +10,6 @@ import { IOffers } from 'src/app/domain/ioffres';
 })
 export class OffresListComponent implements OnInit {
   data: IOffers[];
-  rate = 7;
   isReadonly = true;
   constructor(private _service: OffresService) { }
 
@@ -20,5 +19,4 @@ export class OffresListComponent implements OnInit {
         err => console.log(`ATTENTION : Il ya l'exception : {err} `)
      );
   }
-
 }

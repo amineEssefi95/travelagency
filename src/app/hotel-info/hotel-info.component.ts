@@ -1,3 +1,4 @@
+import { IImages } from './../domain/iimages';
 import { IOffers } from './../domain/ioffres';
 import { OffresService } from 'src/app/services/offres.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,8 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HotelInfoComponent implements OnInit {
 
-  offre: any;
-
+  offre: IOffers;
+  images: IImages[];
   constructor(private offresservice: OffresService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -20,7 +21,8 @@ export class HotelInfoComponent implements OnInit {
     res => this.offre = res,
     err => console.log(`ATTENTION : Il ya l'exception : {err} `)
  );
-   console.log(this.activatedRoute.snapshot.params['id']);
+    this.images = this.offre.image;
+    console.log(this.activatedRoute.snapshot.params['id']);
     console.log(this.offre.nomHotel);
   }
 
