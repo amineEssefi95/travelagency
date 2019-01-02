@@ -1,0 +1,16 @@
+<form [formGroup]="clientForm" class="row">
+  <div class="form-group col-md-4 offset-4">
+    <label for="" > nom:</label>
+    <input type="text" class="form-control" formControlName="nom">
+    <label for=""> prenom:</label>
+    <input type="text" class="form-control" formControlName="prenom">
+    <label for=""> adresse:</label>
+    <input type="text" class="form-control" placeholder="test" formControlName="adresse">
+    <label for=""> email:</label>
+    <input type="text" class="form-control" formControlName="email">
+    <label for=""> telephone:</label>
+    <input type="text" class="form-control"  formControlName="telephone">
+    <button type="submit" class="btn btn-primary offset-2" (click)="addClient()" [disabled]="!clientForm.valid">Submit</button>
+    <button type="reset" class="btn btn-danger offset-1">Reset</button>
+  </div>
+</form>

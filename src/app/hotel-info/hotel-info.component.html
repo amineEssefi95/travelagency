@@ -1,9 +1,41 @@
-<p>
-  {{offre.nomHotel}}
-  {{offre.idOffre}}
-  {{offre.prixNuite}}
-</p>
+<h1 class="text-center"> {{offre.nomHotel}} {{offre.ville}}</h1>
 <div class="container">
+  <div class="row" style="border: black solid 2px;">
+  <div class="car col-md-6">
    <app-carousel></app-carousel>
+  </div>
+  <div class="mp col-md-6">
    <app-map></app-map>
+  </div>
 </div>
+    <div class="row" style="border: black solid 2px;">
+      <div class="description col-md-9 p-2 pl-1" >
+        {{offre.description}}
+      </div>
+      <div class="prix col-md-3">
+        <div class="row">
+          <table class="table">
+              <tr>
+                <td>All-inclusive</td>
+                <td>{{offre.prixNuiteAllInclusive}}</td>
+              </tr>
+              <tr>
+                <td>All-inclusive-soft</td>
+                <td>{{offre.prixNuiteAllInclusiveSoft}}</td>
+              </tr>
+              <tr>
+                <td>pension-complete</td>
+                <td>{{offre.prixNuitePensionComplete}}</td>
+              </tr>
+              <tr>
+                <td>Demi-pension</td>
+                <td>{{offre.prixNuiteDemiPension}}</td>
+              </tr>
+          </table>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary" [routerLink]="['/reservation/', offre.idOffre]">Reserver</button>
+        </div>
+      </div>
+    </div>
+  </div>

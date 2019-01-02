@@ -21,7 +21,7 @@ export class HotelInfoComponent implements OnInit {
     res => this.offre = res,
     err => console.log(`ATTENTION : Il ya l'exception : {err} `)
  );
-    this.images = this.offre.image;
+    this.images = this.offre.images;
     console.log(this.activatedRoute.snapshot.params['id']);
     console.log(this.offre.nomHotel);
   }

@@ -1,3 +1,4 @@
+import { FormulaireComponent } from './reservation/formulaire/formulaire.component';
 import { AjouterOffreComponent } from './admin/ajouter-offre/ajouter-offre.component';
 import { HomeComponent } from './home/home.component';
 import { HotelInfoComponent } from './hotel-info/hotel-info.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'hotelinfo/:id', component: HotelInfoComponent },
     { path: 'AdminCompte/AjouterUnOffre', component: AjouterOffreComponent },
+    { path: 'reservation/:id', component: FormulaireComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
