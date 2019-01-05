@@ -10,7 +10,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./hotel-info.component.scss']
 })
 export class HotelInfoComponent implements OnInit {
-
   offre: IOffers;
   images: IImages[];
   constructor(private offresservice: OffresService, private activatedRoute: ActivatedRoute) { }
@@ -25,5 +24,4 @@ export class HotelInfoComponent implements OnInit {
     console.log(this.activatedRoute.snapshot.params['id']);
     console.log(this.offre.nomHotel);
   }
-
 }

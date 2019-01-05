@@ -2,10 +2,10 @@
 <div class="container">
   <div class="row" style="border: black solid 2px;">
   <div class="car col-md-6">
-   <app-carousel></app-carousel>
+   <app-carousel [images]="offre.images"></app-carousel>
   </div>
   <div class="mp col-md-6">
-   <app-map></app-map>
+   <app-map [lng]="offre.longitude" [lat]="offre.latitude"></app-map>
   </div>
 </div>
     <div class="row" style="border: black solid 2px;">

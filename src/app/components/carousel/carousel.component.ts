@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IImages } from './../../domain/iimages';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit {
 
   constructor() { }
-
+  @Input() images: IImages[];
   ngOnInit() {
   }
 }
