@@ -1,7 +1,7 @@
-import { FormulaireComponent } from './reservation/formulaire/formulaire.component';
+import { HomeComponent } from './components/home/home.component';
+import { HotelInfoComponent } from './components/hotel-info/hotel-info.component';
+import { FormulaireComponent } from './components/formulaire/formulaire.component';
 import { AjouterOffreComponent } from './admin/ajouter-offre/ajouter-offre.component';
-import { HomeComponent } from './home/home.component';
-import { HotelInfoComponent } from './hotel-info/hotel-info.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';

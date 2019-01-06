@@ -1,5 +1,5 @@
-import { IImages } from './../domain/iimages';
-import { IOffers } from './../domain/ioffres';
+import { IImages } from './../../domain/iimages';
+import { IOffers } from './../../domain/ioffres';
 import { OffresService } from 'src/app/services/offres.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';

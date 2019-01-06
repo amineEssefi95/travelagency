@@ -32,6 +32,7 @@ export class FormulaireComponent implements OnInit {
     email: ['', Validators.required],
     telephone: ['', Validators.required],
   });
+  get f() { return this.clientForm.controls.nom; }
 
   addClient(): void {
     const formValue = this.clientForm.value;

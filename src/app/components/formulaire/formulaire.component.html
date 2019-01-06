@@ -1,7 +1,12 @@
 <form [formGroup]="clientForm" class="row">
   <div class="form-group col-md-4 offset-4">
     <label for="" > nom:</label>
-    <input type="text" class="form-control" formControlName="nom">
+    <input type="text" class="form-control" formControlName="nom" >
+
+    <div *ngIf="f.errors">
+        Name is required.
+      </div>
+
     <label for=""> prenom:</label>
     <input type="text" class="form-control" formControlName="prenom">
     <label for=""> adresse:</label>
