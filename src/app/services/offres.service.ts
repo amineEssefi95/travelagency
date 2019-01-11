@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class OffresService {
-  URL = 'http://localhost:8080/offre/';
+  URL = 'https://aminetravelagency.herokuapp.com/offre/';
   constructor(private _http: HttpClient) {}
 
   getAllOffres(): Observable<IOffers[]> {

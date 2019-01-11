@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class ClientService {
 
-  URL = 'http://localhost:8080/client/';
+  URL = 'https://aminetravelagency.herokuapp.com/client/';
 
   constructor(private _http: HttpClient) {}
 
