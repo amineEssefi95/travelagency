@@ -1,7 +1,7 @@
 import { IImages } from './iimages';
 
 export interface IOffers {
-  idOffre: number;
+  idOffre?: number;
   adress: string;
   nomHotel: string;
   region: string;
@@ -14,6 +14,7 @@ export interface IOffers {
   prixNuitePensionComplete: number;
   longitude: number;
   latitude: number;
+  pays: string;
   reservations?: any[];
   images: IImages[];
 }
