@@ -1,21 +1,75 @@
-<form [formGroup]="clientForm" class="row">
-  <div class="form-group col-md-4 offset-4">
-    <label for="" > nom:</label>
-    <input type="text" class="form-control" formControlName="nom" >
+<div class="content">
+<div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+          <h2>Tour & Travel Reservation Booking Form</h2>
+          </div>
+          </div>
+    <div class="row">
 
-    <div *ngIf="f.errors">
-        Name is required.
-      </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+        <div class="tour-booking-form">
+            <form [formGroup]="clientForm">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                        <h4 class="tour-form-title">Client detail</h4>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="control-label required" for="select">Nom*:</label>
+                              <input type="text" class="form-control" formControlName="nom" >
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="form-group">
+                        <label class="control-label required" for="select">Prenom*:</label>
+                          <input type="text" class="form-control" formControlName="prenom" >
+                    </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
+                      <h4>Adresse*:</h4>
+                  </div>
+                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-8">
+                        <div class="form-group">
+                          <label class="control-label required" for="select">Ville*:</label>
+                          <input type="text" class="form-control" formControlName="" >
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-8">
+                      <div class="form-group">
+                        <label class="control-label required" for="select">Region*:</label>
+                        <input type="text" class="form-control" formControlName="" >
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-8">
+                    <div class="form-group">
+                      <label class="control-label required" for="select">Rue*:</label>
+                      <input type="text" class="form-control" formControlName="" >
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                  <div class="form-group">
+                      <label class="control-label required" for="select">Email*:</label>
+                        <input type="text" class="form-control" formControlName="email" >
+                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label required" for="select">Telephone*:</label>
+                    <input type="text" class="form-control" formControlName="telephone" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 m-auto">
+                <button type="submit" class="btn btn-primary" (click)="addClient()" [disabled]="clientForm.valid">Reserver</button>
+                <button type="reset" class="btn btn-primary" (click)="addClient()" >Reset</button>
+            </div>
+          </div>
+        </form>
+        </div>
 
-    <label for=""> prenom:</label>
-    <input type="text" class="form-control" formControlName="prenom">
-    <label for=""> adresse:</label>
-    <input type="text" class="form-control" placeholder="test" formControlName="adresse">
-    <label for=""> email:</label>
-    <input type="text" class="form-control" formControlName="email">
-    <label for=""> telephone:</label>
-    <input type="text" class="form-control"  formControlName="telephone">
-    <button type="submit" class="btn btn-primary offset-2" (click)="addClient()" [routerLink]="['/home']" [disabled]="!clientForm.valid">Submit</button>
-    <button type="reset" class="btn btn-danger offset-1">Reset</button>
-  </div>
-</form>
+    </div>
+	</div>
+</div>
+</div>

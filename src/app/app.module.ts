@@ -1,3 +1,4 @@
+import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -7,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OffresListComponent } from './components/offres-list/offres-list.component';
@@ -19,6 +21,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AjouterOffreComponent } from './admin/ajouter-offre/ajouter-offre.component';
 import { MapComponent } from './components/map/map.component';
 import { FormulaireComponent } from './components/formulaire/formulaire.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeadminComponent } from './components/homeadmin/homeadmin.component';
 
 
 @NgModule({
@@ -33,6 +37,9 @@ import { FormulaireComponent } from './components/formulaire/formulaire.componen
     AjouterOffreComponent,
     MapComponent,
     FormulaireComponent,
+    NavbarComponent,
+    LoginComponent,
+    HomeadminComponent
   ],
   imports: [
     BrowserModule,

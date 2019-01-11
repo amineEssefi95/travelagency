@@ -1,28 +1,28 @@
-<div class="container-fluid mt-3">
+<div class="container-fluid" style="background-color: #f5f5f5">
   <div class="form-row">
 
   </div>
   <div class="container-fluid mt-3">
     <div class="row card-header bg-info text-white" style="height: 200px;">
-      <div class="row col-12 mt-2 ml-6">
+      <div class="row col-7 mt-2 m-auto">
         <h3>Trouvez les meilleures offres d'hébergement</h3>
       </div>
 
-      <div class="row col-md-10 m-auto">
-      <div class="col-md-4">
+      <div class="row col-md-11 m-auto">
+      <div class="col-md-3">
         <label>Choisissez votre destination</label>
         <select id="inputcontry" class="form-control form-control-lg" [(ngModel)]="paysSearch" (ngModelChange)="ville=[];villeSearch=''">
           <option *ngFor="let item of pays; index as i" [ngValue]="i == 0 ? '' : item" [selected]= " i === 0 ">{{item}}</option>
         </select>
       </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
         <label>Choisissez la ville </label>
       <select id="inputState" class="form-control form-control-lg" [(ngModel)]="villeSearch"  [disabled]="!paysSearch">
           <option *ngFor="let item of ville; index as i" [ngValue]="i == 0 ? '' : item"  [selected]= " i == 0 " >{{item}}</option>
       </select>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
       <label>nombre des etoile </label>
     <select id="inputState" class="form-control form-control-lg" [(ngModel)]="nbEtoile">
        <option selected ></option>
@@ -33,7 +33,7 @@
        <option [ngValue]="5">5</option>
     </select>
 </div>
-      <div class="col-md-2 mt-2">
+      <div class="col-md-3 mt-2">
           <label></label>
           <input type="text" [(ngModel)]="search" class="form-control form-control-lg" placeholder="Recherche">
       </div>

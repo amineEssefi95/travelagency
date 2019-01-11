@@ -3,7 +3,7 @@ import { ClientService } from './../../services/clients.service';
 import { IImages } from './../../domain/iimages';
 import { IOffers } from 'src/app/domain/ioffres';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulaire',
@@ -11,28 +11,21 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
   styleUrls: ['./formulaire.component.scss']
 })
 export class FormulaireComponent implements OnInit {
-   x: string;
+
   cli: IClient;
   offre: IOffers;
   images: IImages[];
   constructor(private service: ClientService, private fb: FormBuilder) { }
 
-  // client = new FormGroup({
-  //  nom: new FormControl(''),
-  //  prenom: new FormControl(''),
-  // adresse: new FormControl(''),
-  // email:  new FormControl(''),
-  // telephone: new FormControl('')
-  // });
-
   clientForm = this.fb.group({
     nom: ['', Validators.required],
     prenom: ['', Validators.required],
-    adresse: ['', Validators.required],
     email: ['', Validators.required],
     telephone: ['', Validators.required],
+    ville: ['', Validators.required],
+    region: ['', Validators.required],
+    rue: ['', Validators.required],
   });
-  get f() { return this.clientForm.controls.nom; }
 
   addClient(): void {
     const formValue = this.clientForm.value;
