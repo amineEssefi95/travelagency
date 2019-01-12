@@ -1,7 +1,11 @@
+import { IReservation } from './ireservation';
 export interface IClient {
   nom: string;
   prenom: string;
-  adresse: string;
+  ville: string;
+  region: string;
+  rue: string;
   email: string;
-  numeroTelephone: number;
+  numeroTelephone: string;
+  reservations?: IReservation[];
 }
